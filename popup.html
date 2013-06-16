@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gdict's Popup</title>
+    <style></style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
+  
+  <body>
+    <div>
+      <span>Dictionary</span>
+      <form action="">
+      <input type="radio" name="dictionary" value="google" id="google">google<br />
+      <input type="radio" name="dictionary" value="eijiro" id="eijiro">eijiro/alc<br />
+      <input type="radio" name="dictionary" value="weblio" id="weblio">weblio
+      </form>
+    </div>
+    <br />
+    
+    <div>
+      <span>History</span>
+      <button id="clearButton" type="button">Clear</button>
+    </div>
+    
+    <textarea id="myTextarea" cols="20" rows="20"></textarea>
+  </body>
+  
+</html>

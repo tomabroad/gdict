@@ -1,0 +1,17 @@
+{
+  "name": "gdict",
+  "description": "Lookup the selected text online",
+  "version": "0.4",
+  "permissions": ["contextMenus"],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2,
+  
+  "browser_action": {
+    "default_icon": "favicon.ico",
+    "default_title": "gdict history",
+    "default_popup": "popup.html"
+  }
+}
