@@ -1,4 +1,5 @@
-# Gdict is a Google Chrome Extension for looking up the selected text on the browser.
+# Gdict
+### Google Chrome Extension for looking up the selected text on the browser.
 
 ## Feature
 * Right-click to search the meaning of the selected text
@@ -19,11 +20,11 @@
 http://developer.chrome.com/extensions/getstarted.html#unpacked
 
 ## How to use gdict
-* Search terms
+* Search terms<br />
 Select the text you want to check, right-click on it, and select 'Lookup Online.' A new window will show up to show the search result.
-* Browse history
+* Browse history<br />
 Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area.
-* Customize dictionary
+* Customize dictionary<br />
 Click the gdict's icon to the right of the Omnibox to show the dialog. Choose the dictionary you want to use.
 
 ## License
