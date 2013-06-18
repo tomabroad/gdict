@@ -29,4 +29,3 @@ Click the gdict's icon to the right of the Omnibox to show the dialog. Choose th
 
 ## License
 MIT licensed
-see LICENSE.txt for more detail
