@@ -3,7 +3,7 @@
 // http://stackoverflow.com/questions/6064956/replace-all-occurrences-in-a-string
 function showHistory() {
   // var texts = "a	b	c";
-  var texts = chrome.extension.getBackgroundPage().getHistory();  
+  var texts = getHistory();  
   var str = texts.replace(/\t/g, "\n") + "\n";
   setMyTextarea(str);
 }
@@ -11,7 +11,7 @@ function showHistory() {
 // http://www.w3schools.com/jsref/event_onclick.asp
 function addClearEvent() {
   document.getElementById('clearButton').onclick = function() {
-    chrome.extension.getBackgroundPage().clearHistory();
+    clearHistory();
     setMyTextarea("");
   };
 }
@@ -22,18 +22,18 @@ function setMyTextarea(text) {
 
 function addDictionarySelectEvent() {
   document.getElementById("google").onclick = function() {
-    chrome.extension.getBackgroundPage().setDictionary("google");
+    setDictionary("google");
   };
   document.getElementById("eijiro").onclick = function() {
-    chrome.extension.getBackgroundPage().setDictionary("eijiro");
+    setDictionary("eijiro");
   };
   document.getElementById("weblio").onclick = function() {
-    chrome.extension.getBackgroundPage().setDictionary("weblio");
+    setDictionary("weblio");
   };
 }
 
 function checkDictionary() {
-  var dict = chrome.extension.getBackgroundPage().getDictionary();
+  var dict = getDictionary();
   document.getElementById(dict).checked = true;
 }
 
