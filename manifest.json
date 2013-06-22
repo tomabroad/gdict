@@ -5,7 +5,7 @@
   "permissions": ["contextMenus"],
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": ["background.js", "gcookie.js"]
   },
   "manifest_version": 2,
   
