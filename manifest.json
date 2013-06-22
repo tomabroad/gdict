@@ -4,7 +4,7 @@
   "version": "0.6",
   "permissions": ["contextMenus"],
   "background": {
-    "persistent": true,
+    "persistent": false,
     "scripts": ["background.js"]
   },
   "manifest_version": 2,
