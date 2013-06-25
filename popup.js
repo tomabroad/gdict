@@ -1,23 +1,21 @@
 
-// http://stackoverflow.com/questions/7838384/chrome-extension-official-docs-popup-can-invoke-functions-on-the-background-p
 // http://stackoverflow.com/questions/6064956/replace-all-occurrences-in-a-string
 function showHistory() {
-  // var texts = "a	b	c";
   var texts = getHistory();  
   var str = texts.replace(/\t/g, "\n") + "\n";
-  setMyTextarea(str);
+  setHistoryTextarea(str);
 }
 
 // http://www.w3schools.com/jsref/event_onclick.asp
 function addClearEvent() {
   document.getElementById('clearButton').onclick = function() {
     clearHistory();
-    setMyTextarea("");
+    setHistoryTextarea("");
   };
 }
 
-function setMyTextarea(text) {
-  document.getElementById('myTextarea').innerHTML = text;
+function setHistoryTextarea(text) {
+  document.getElementById('historyTextarea').innerHTML = text;
 }
 
 function addDictionarySelectEvent() {
