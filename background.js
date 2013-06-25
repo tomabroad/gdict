@@ -1,5 +1,4 @@
-// reference
-// Context Menus Sample (with Event Page)
+// sample - Context Menus Sample (with Event Page)
 // http://developer.chrome.com/extensions/samples.html
 
 // The onClicked callback function.
@@ -7,15 +6,9 @@ function onClickHandler(info, tab) {
   var sText = info.selectionText;
   var url = createUrl(sText);  
   
-  open_in_new_tab(url);  
+  window.open(url, '_blank');
   addHistory(sText);  
 };
-
-// http://stackoverflow.com/questions/4907843/open-url-in-new-tab-using-javascript
-function open_in_new_tab(url) {
-  var win = window.open(url, '_blank');
-  win.focus();
-}
 
 chrome.contextMenus.onClicked.addListener(onClickHandler);
 
