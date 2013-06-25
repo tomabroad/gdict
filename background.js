@@ -20,9 +20,7 @@ chrome.runtime.onInstalled.addListener(function() {
                                          "id": "context" + context});  
 });
 
-/*
-dictionary url
-*/
+// dictionary url
 
 function createUrl(sText) {
   var url;
@@ -41,7 +39,6 @@ function createUrl(sText) {
 }
 
 function createGoogleUrl(query) {
-  // var query = sText + " meaning";
   var url = "https://www.google.com/search?q=" + encodeURIComponent(query);  
   return url;
 }
