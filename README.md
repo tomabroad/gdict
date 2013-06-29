@@ -21,11 +21,10 @@ http://developer.chrome.com/extensions/getstarted.html#unpacked
 
 ## How to use gdict
 #### Search terms
-  Select the text you want to check, right-click on it, and select 'Lookup Online.' A new window will show up to show the search result.
+Select the text you want to check, right-click on it, and select 'Lookup Online.' A new window will show up to show the search result. To customize the dictionary, click the gdict's icon to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
+
 #### Browse history
-  Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area.
-#### Customize dictionary
-  Click the gdict's icon to the right of the Omnibox to show the dialog. Choose the dictionary you want to use.
+Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area. Clear the history by clicking the clear button. (Duplicated terms are not stored)
 
 ## License
 MIT licensed
