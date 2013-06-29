@@ -8,17 +8,34 @@ function showHistory() {
 
 // http://www.w3schools.com/jsref/event_onclick.asp
 function addClearEvent() {
+  $("#clearButton").click(function(){
+    clearHistory();
+    setHistoryTextarea("");
+  });
+  /*
   document.getElementById('clearButton').onclick = function() {
     clearHistory();
     setHistoryTextarea("");
   };
+  */
 }
 
 function setHistoryTextarea(text) {
-  document.getElementById('historyTextarea').innerHTML = text;
+  $("#historyTextarea").val(text);
+//  document.getElementById('historyTextarea').innerHTML = text;
 }
 
 function addDictionarySelectEvent() {
+  $("#google").click(function(){
+    setDictionary("google");
+  });
+  $("#eijiro").click(function(){
+    setDictionary("eijiro");
+  });
+  $("#weblio").click(function(){
+    setDictionary("weblio");
+  });
+  /*
   document.getElementById("google").onclick = function() {
     setDictionary("google");
   };
@@ -28,19 +45,37 @@ function addDictionarySelectEvent() {
   document.getElementById("weblio").onclick = function() {
     setDictionary("weblio");
   };
+  */
 }
 
 function checkDictionary() {
   var dict = getDictionary();
-  document.getElementById(dict).checked = true;
+  $("#" + dict).prop("checked", true);
+//  document.getElementById(dict).checked = true;
 }
+
+function addClickLinkEvent() {
+  $("#gdictLinkButton").click(function(){
+    var url = "https://github.com/tomabroad/gdict";
+    window.open(url, '_blank');
+  });
+}
+
+$(document).ready(function(){
+  checkDictionary();
+  addDictionarySelectEvent();  
+  showHistory();
+  addClearEvent();
+  addClickLinkEvent();
+});
 
 // Run as soon as the document's DOM is ready.
 // http://developer.chrome.com/extensions/getstarted.html
+/*
 document.addEventListener('DOMContentLoaded', function () {
   checkDictionary();
   addDictionarySelectEvent();
-  
   showHistory();
   addClearEvent();
 });
+*/

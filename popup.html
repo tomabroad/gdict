@@ -9,6 +9,7 @@
       -
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
      -->
+    <script type="text/javascript" src="jquery-2.0.2.min.js"></script>
     <script type="text/javascript" src="popup.js"></script>
     <script type="text/javascript" src="gcookie.js"></script>
   </head>
@@ -16,11 +17,9 @@
   <body>
     <div>
       <p>Dictionary</p>
-      <form action="">
       <input type="radio" name="dictionary" value="google" id="google">google<br />
       <input type="radio" name="dictionary" value="eijiro" id="eijiro">eijiro<br />
       <input type="radio" name="dictionary" value="weblio" id="weblio">weblio
-      </form>
     </div>
     <br />
     
@@ -34,7 +33,8 @@
     
     <div>
       <p>Link</p>
-      <a href="https://github.com/tomabroad/gdict">tomabroad/gdict</a>
+      <!--a href="https://github.com/tomabroad/gdict">tomabroad/gdict</a-->
+      <button id="gdictLinkButton" type="button">tomabroad/gdict</button>
     </div>    
   </body>
   
