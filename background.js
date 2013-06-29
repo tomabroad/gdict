@@ -1,6 +1,4 @@
-// sample - Context Menus Sample (with Event Page)
 // http://developer.chrome.com/extensions/samples.html
-
 // The onClicked callback function.
 function onClickHandler(info, tab) {
   var sText = info.selectionText;
@@ -21,7 +19,6 @@ chrome.runtime.onInstalled.addListener(function() {
 });
 
 // dictionary url
-
 function createUrl(sText) {
   var url;
   var dict = getDictionary();  
