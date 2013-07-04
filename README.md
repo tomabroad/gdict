@@ -6,9 +6,9 @@
 * Browse the search history
 
 ## Download
-1. Visit [https://github.com/tomabroad/gdict](https://github.com/tomabroad/gdict)
-2. Click ZIP button to download the archive file
-3. Unzip the downloaded file on the local drive
+1. Visit the release page [https://github.com/tomabroad/gdict/releases](https://github.com/tomabroad/gdict/releases)
+2. Download the latest zip file and unzip it
+3. Place the file anywhere on the local drive
 
 ## Setup
 1. Visit [chrome://extensions](chrome://extensions) in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox and select Extensions under the Tools menu to get to the same place).
