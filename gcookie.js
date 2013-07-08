@@ -1,7 +1,6 @@
-
-// cookie
-
 var C_DAYS = 365;
+var C_HIST = "c_hist";
+var C_DICT = "c_dict";
 
 // http://www.w3schools.com/js/js_cookies.asp
 function setCookie(c_name, value, exdays) {
@@ -34,8 +33,6 @@ function getCookie(c_name) {
 }
 
 // history
-
-var C_HIST = "c_hist";
 
 function addHistory(str) {
   var hs = getHistory();
@@ -77,8 +74,6 @@ function clearHistory() {
 }
 
 // dictionary
-
-var C_DICT = "c_dict";
 
 function setDictionary(dict) {
   setCookie(C_DICT, dict, C_DAYS);
