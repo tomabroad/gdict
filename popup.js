@@ -1,8 +1,12 @@
 
 // http://stackoverflow.com/questions/6064956/replace-all-occurrences-in-a-string
 function showHistory() {
-  var texts = getHistory();  
-  var str = texts.replace(/\t/g, "\n") + "\n";
+  var str = "";
+  var arr = getHistory();
+  
+  for (var i=0; i<arr.length; i++) {
+    str += arr[i] + "\n";
+  }
   setHistoryTextarea(str);
 }
 

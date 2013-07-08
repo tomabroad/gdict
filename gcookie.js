@@ -34,39 +34,35 @@ function getCookie(c_name) {
 
 // history
 
-function addHistory(str) {
-  var hs = getHistory();
+function addHistory(term) {
+  var arr = getHistory();
+  var index = arr.length;
+  arr[index] = term;
+  setHistory(arr);
+}
+
+// private
+function setHistory(arr) {
+  var hs = "";
   
-  if ( isEmpty(hs) ) {
-    hs = str;
-    
-  } else {
-    var arr = hs.split("\t");
-    
-    if ( !contains(str, arr) ) {
-      hs += "\t" + str;
-    }
+  for (var i=0; i<arr.length; i++) {
+    hs += arr[i] + "\t";
   }
+  hs = hs.substring(0, hs.length-1);
   setCookie(C_HIST, hs, C_DAYS);
 }
 
-function isEmpty(str) {
-  return str == null || str == "";
-}
-
-function contains(target, arr) {
-
-  for (var i=0; i<arr.length; i++) {  
-    if (target == arr[i]) {
-      return true;
-    }
-  }
-  return false;
-}
-
 function getHistory() {
-  var tmp = getCookie(C_HIST);
-  return tmp;
+  var hs = getCookie(C_HIST);
+  
+  if ( isEmpty(hs) ) {
+    var arr = [];
+    return arr;
+        
+  } else {
+    var arr = hs.split("\t");
+    return arr;    
+  }
 }
 
 function clearHistory() {
@@ -86,4 +82,20 @@ function getDictionary() {
     tmp = "google";
   }
   return tmp;
+}
+
+// utility
+
+function isEmpty(str) {
+  return str == null || str == "";
+}
+
+function contains(target, arr) {
+
+  for (var i=0; i<arr.length; i++) {  
+    if (target == arr[i]) {
+      return true;
+    }
+  }
+  return false;
 }
