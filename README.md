@@ -19,7 +19,7 @@
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
 
-## How to use gdict
+## How to use Gdict
 #### Search terms
 Select the text you want to check, right-click on it, and select 'Lookup Online.' A new window will show up to show the search result. To customize the dictionary, click the gdict's icon to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
 

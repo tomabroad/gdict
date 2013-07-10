@@ -1,5 +1,5 @@
 {
-  "name": "gdict",
+  "name": "Gdict",
   "description": "Lookup the selected text online",
   "version": "0.8.3",
   "permissions": ["contextMenus"],
