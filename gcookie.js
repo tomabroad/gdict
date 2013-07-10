@@ -41,7 +41,6 @@ function addHistory(term) {
   setHistory(arr);
 }
 
-// private
 function setHistory(arr) {
   var hs = "";
   
