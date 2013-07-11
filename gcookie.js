@@ -36,6 +36,9 @@ function getCookie(c_name) {
 
 function addHistory(term) {
   var arr = getHistory();
+  if ( contains(term, arr) ) {
+    return;
+  }
   var index = arr.length;
   arr[index] = term;
   setHistory(arr);
