@@ -1,5 +1,5 @@
 # Gdict
-### Google Chrome Extension for looking up the selected text on the browser.
+Google Chrome Extension for looking up the selected text on the browser.
 
 ## Feature
 * Right-click to search the meaning of the selected text
