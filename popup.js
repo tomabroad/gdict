@@ -28,7 +28,7 @@ function getDisplayedHistory() {
   var lines = getHistoryTextarea().split('\n');
   var arr = [];
   
-  for (var i = 0; i < lines.length; i++) {
+  for (var i = lines.length-1; i >= 0; i--) {
     var line = lines[i];
     
     if ( !isEmpty(line) ) {
