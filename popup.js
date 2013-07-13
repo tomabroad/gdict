@@ -17,7 +17,7 @@ function showHistory() {
   var str = "";
   var arr = getHistory();
   
-  for (var i=0; i<arr.length; i++) {
+  for (var i=arr.length-1; i>=0; i--) {
     str += arr[i] + "\n";
   }
   setHistoryTextarea(str);
