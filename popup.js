@@ -23,6 +23,12 @@ function showHistory() {
   setHistoryTextarea(str);
 }
 
+function showNumHistory() {
+  var n = getHistory().length;
+  var str = "(" + n + ")";
+  $("#numHistory").html(str);
+}
+
 // http://stackoverflow.com/questions/1726747/jquery-how-do-you-loop-through-each-newline-of-text-typed-inside-a-textarea
 function getDisplayedHistory() {
   var lines = getHistoryTextarea().split('\n');
@@ -42,7 +48,7 @@ function getDisplayedHistory() {
 function addClearEvent() {
   $("#clearButton").click(function(){
     clearHistory();
-    setHistoryTextarea("");
+    update();
   });
 }
 
@@ -70,18 +76,25 @@ function addUpdateEvent() {
   $("#updateButton").click(function(){
     var arr = getDisplayedHistory();
     setHistory(arr);
-    showHistory();    
+    update();
   });
 }
 
-$(document).ready(function(){
-  // console.log("popup: $(document).ready");
-  
+function update() {
   checkDictionary();
   showHistory();
-  
+  showNumHistory();
+}
+
+function addEvents() {
   addDictionarySelectEvent();  
   addUpdateEvent();
   addClearEvent();
   addClickLinkEvent();
+}
+
+$(document).ready(function(){
+  // console.log("popup: $(document).ready");
+  update();  
+  addEvents();  
 });
