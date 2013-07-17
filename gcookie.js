@@ -39,8 +39,7 @@ function addHistory(term) {
   if ( contains(term, arr) ) {
     return;
   }
-  var index = arr.length;
-  arr[index] = term;
+  arr.push(term);
   setHistory(arr);
 }
 
