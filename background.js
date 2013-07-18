@@ -13,7 +13,7 @@ chrome.contextMenus.onClicked.addListener(onClickHandler);
 // Set up context menu at install time.
 chrome.runtime.onInstalled.addListener(function() {
   var context = "selection";
-  var title = "Lookup Online";
+  var title = "Gdict";
   var id = chrome.contextMenus.create({"title": title, "contexts":[context],
                                          "id": "context" + context});  
 });
