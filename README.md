@@ -6,14 +6,12 @@ Google Chrome Extension for looking up the selected text on the browser.
 * Browse the search history
 
 ## Download
-![download](/img/download.png)
 1. Visit the release page [https://github.com/tomabroad/gdict/releases](https://github.com/tomabroad/gdict/releases)
 2. Download the latest zip file and unzip it
 3. Place the file anywhere on the local drive
+![download](/img/download.png)
 
 ## Setup
-![select extension](/img/select_extension.png)
-![setup](/img/setup.png)
 1. Visit [chrome://extensions](chrome://extensions) in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox and select Extensions under the Tools menu to get to the same place).
 2. Ensure that the Developer mode checkbox in the top right-hand corner is checked.
 3. Click Load unpacked extension… to pop up a file-selection dialog.
@@ -21,6 +19,9 @@ Google Chrome Extension for looking up the selected text on the browser.
 
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
+![select extension](/img/select_extension.png)
+
+![setup](/img/setup.png)
 
 ## Usage
 #### Search terms
