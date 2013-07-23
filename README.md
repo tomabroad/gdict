@@ -9,6 +9,7 @@ Google Chrome Extension for looking up the selected text on the browser.
 1. Visit the release page [https://github.com/tomabroad/gdict/releases](https://github.com/tomabroad/gdict/releases)
 2. Download the latest zip file and unzip it
 3. Place the file anywhere on the local drive
+
 ![download](/img/download.png)
 
 ## Setup
@@ -19,6 +20,7 @@ Google Chrome Extension for looking up the selected text on the browser.
 
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
+
 ![select extension](/img/select_extension.png)
 
 ![setup](/img/setup.png)
@@ -26,10 +28,12 @@ http://developer.chrome.com/extensions/getstarted.html#unpacked
 ## Usage
 #### Search terms
 Select the text you want to check, right-click on it, and click on Gdict button. A new window will be open with the search result. To customize the dictionary, click the gdict's icon to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
+
 ![search](/img/search.png)
 
 #### Browse history
 Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area. Clear the history by clicking the clear button. (Duplicated terms are not stored)
+
 ![popup](/img/popup.png)
 
 ## Version
