@@ -21,8 +21,6 @@ Google Chrome Extension for looking up the selected text on the browser.
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
 
-![select extension](/img/select_extension.png)
-
 ![setup](/img/setup.png)
 
 ## Usage
