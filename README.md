@@ -37,8 +37,8 @@ Click the gdict's icon to the right of the Omnibox to show the dialog. The searc
 ![popup](/img/popup.png)
 
 ## Version
-See manifest.json
+See [manifest.json](manifest.json)
 
 ## License
 MIT licensed
-See LICENSE for detail
+See [LICENSE](LICENSE) for detail
