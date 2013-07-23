@@ -21,7 +21,7 @@ http://developer.chrome.com/extensions/getstarted.html#unpacked
 
 ## Usage
 #### Search terms
-Select the text you want to check, right-click on it, and click on '![Alt text](img/favicon.png) Gdict' button. A new window will be open with the search result. To customize the dictionary, click the gdict's icon ![Alt text](img/favicon.png) to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
+Select the text you want to check, right-click on it, and click on '![Alt text](/img/favicon.png) Gdict' button. A new window will be open with the search result. To customize the dictionary, click the gdict's icon ![Alt text](/img/favicon.png) to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
 
 #### Browse history
 Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area. Clear the history by clicking the clear button. (Duplicated terms are not stored)
