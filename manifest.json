@@ -1,7 +1,7 @@
 {
   "name": "Gdict",
   "description": "Lookup the selected text online",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "permissions": ["contextMenus"],
   "background": {
     "persistent": false,
@@ -10,10 +10,10 @@
   "manifest_version": 2,
   
   "icons": {
-    "16": "favicon.png"
+    "16": "img/favicon.png"
   },  
   "browser_action": {
-    "default_icon": "favicon.png",
+    "default_icon": "img/favicon.png",
     "default_title": "gdict history",
     "default_popup": "popup.html"
   }
