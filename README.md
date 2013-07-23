@@ -6,11 +6,14 @@ Google Chrome Extension for looking up the selected text on the browser.
 * Browse the search history
 
 ## Download
+![download](/img/download.png)
 1. Visit the release page [https://github.com/tomabroad/gdict/releases](https://github.com/tomabroad/gdict/releases)
 2. Download the latest zip file and unzip it
 3. Place the file anywhere on the local drive
 
 ## Setup
+![select extension](/img/select_extension.png)
+![setup](/img/setup.png)
 1. Visit [chrome://extensions](chrome://extensions) in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox and select Extensions under the Tools menu to get to the same place).
 2. Ensure that the Developer mode checkbox in the top right-hand corner is checked.
 3. Click Load unpacked extension… to pop up a file-selection dialog.
@@ -21,7 +24,7 @@ http://developer.chrome.com/extensions/getstarted.html#unpacked
 
 ## Usage
 #### Search terms
-Select the text you want to check, right-click on it, and click on '![Alt text](/img/favicon.png) Gdict' button. A new window will be open with the search result. To customize the dictionary, click the gdict's icon ![Alt text](/img/favicon.png) to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
+Select the text you want to check, right-click on it, and click on '![icon](/img/favicon.png) Gdict' button. A new window will be open with the search result. To customize the dictionary, click the gdict's icon ![icon](/img/favicon.png) to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
 
 #### Browse history
 Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area. Clear the history by clicking the clear button. (Duplicated terms are not stored)
