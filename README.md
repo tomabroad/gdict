@@ -41,4 +41,5 @@ See [manifest.json](manifest.json)
 MIT licensed. See [LICENSE](LICENSE) for detail
 
 ## Feedback
-Please take two minutes to fill in the survey. [https://docs.google.com/forms/d/1JdY4Ok3M_uo9XYC_WCCd8ljzj-Kk8aOtJdUapCwWv2w/viewform] (https://docs.google.com/forms/d/1JdY4Ok3M_uo9XYC_WCCd8ljzj-Kk8aOtJdUapCwWv2w/viewform) I appreciate any comments, suggestions, bug reports, and so on.
+Please take two minutes to fill in the survey. I appreciate any comments, suggestions, questions, bug reports, and so on.
+[https://docs.google.com/forms/d/1JdY4Ok3M_uo9XYC_WCCd8ljzj-Kk8aOtJdUapCwWv2w/viewform] (Write a feedback)
