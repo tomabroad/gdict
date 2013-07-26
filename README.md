@@ -43,3 +43,7 @@ MIT licensed. See [LICENSE](LICENSE) for detail
 ## Feedback
 Please take two minutes to fill in the survey. I appreciate any comments, suggestions, questions, bug reports, and so on.
 [Write a feedback](https://docs.google.com/forms/d/1JdY4Ok3M_uo9XYC_WCCd8ljzj-Kk8aOtJdUapCwWv2w/viewform)
+
+## Developer's Note
+$ zip gdict.zip `cat releases`
+
