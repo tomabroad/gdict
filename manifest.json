@@ -1,11 +1,11 @@
 {
   "name": "Gdict",
   "description": "Lookup the selected text online",
-  "version": "0.8.9",
+  "version": "0.9.0",
   "permissions": ["contextMenus"],
   "background": {
     "persistent": false,
-    "scripts": ["background.js", "gcookie.js"]
+    "scripts": ["js/background.js", "js/gcookie.js"]
   },
   "manifest_version": 2,
   
