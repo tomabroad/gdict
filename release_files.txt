@@ -1,0 +1,12 @@
+LICENSE
+README.md
+background.js
+gcookie.js
+img/favicon.png
+jquery-2.0.2.min.js
+manifest.json
+pack.sh
+popup.css
+popup.html
+popup.js
+releases
