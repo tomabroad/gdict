@@ -17,11 +17,11 @@
   
   <body>
     <div>
-      <h4>Dictionary</h4>
+      <h4>Last Search</h4>
       <form>
-        <input type="radio" name="dictionary" value="google" id="google" />google<br />
-        <input type="radio" name="dictionary" value="eijiro" id="eijiro" />eijiro<br />
-        <input type="radio" name="dictionary" value="weblio" id="weblio" />weblio
+        <input id="lastTermTextbox" type="text" /><br>
+        <button id="lastUpdateButton" type="button">Update</button>
+        <button id="lastDiscardButton" type="button">Discard</button>
       </form>
     </div>
     <hr />
@@ -33,6 +33,16 @@
         <button id="updateButton" type="button">Update</button>
         <button id="clearButton" type="button">Clear</button>
       </div>
+    </div>
+    <hr />
+    
+    <div>
+      <h4>Dictionary</h4>
+      <form>
+        <input type="radio" name="dictionary" id="google" />google<br />
+        <input type="radio" name="dictionary" id="eijiro" />eijiro<br />
+        <input type="radio" name="dictionary" id="weblio" />weblio
+      </form>
     </div>
     <hr />
     

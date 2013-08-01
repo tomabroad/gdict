@@ -70,6 +70,42 @@ function clearHistory() {
   setCookie(C_HIST, "", C_DAYS);
 }
 
+function getLastHistory() {
+  if ( isHistoryEmpty() ) {
+    return 'undefined';
+  }
+  var arr = getHistory();
+  return arr[arr.length - 1];
+}
+
+function popHistory() {
+  if ( isHistoryEmpty() ) {
+    return 'undefined';
+  }
+  var arr = getHistory();
+  var tmp = arr.pop();
+  setHistory(arr);
+  return tmp;
+}
+
+function updateHistory(lastTerm, newTerm) {
+  var arr = getHistory();
+  
+  for (var i=0; i<arr.length; i++) {
+    if (arr[i] == lastTerm) {
+      arr[i] = newTerm;
+      setHistory(arr);
+      return true;
+    }
+  }
+  return false;
+}
+
+function isHistoryEmpty() {
+  var arr = getHistory();
+  return arr.length == 0;
+}
+
 // dictionary
 
 function setDictionary(dict) {
