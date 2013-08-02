@@ -12,10 +12,6 @@ function checkDictionary() {
   $("#" + dict).prop("checked", true);
 }
 
-function getLastTermTextbox() {
-  return $("#lastTermTextbox").val();
-}
-
 // http://stackoverflow.com/questions/6064956/replace-all-occurrences-in-a-string
 function showHistory() {
   var str = "";
@@ -31,18 +27,6 @@ function showNumHistory() {
   var n = getHistory().length;
   var str = "(" + n + ")";
   $("#numHistory").html(str);
-}
-
-function showLastSearch() {
-  var str;
-  var last = getLastHistory();
-  
-  if (last == 'undefined') {
-    str = '---';
-  } else {
-    str = last;
-  }
-  $("#lastTermTextbox").val(str);
 }
 
 // http://stackoverflow.com/questions/1726747/jquery-how-do-you-loop-through-each-newline-of-text-typed-inside-a-textarea
@@ -98,28 +82,10 @@ function addUpdateEvent() {
   });
 }
 
-function addLastUpdateEvent() {
-  $("#lastUpdateButton").click(function(){
-    var lastTerm = getLastHistory();
-    var newTerm = getLastTermTextbox();
-    
-    updateHistory(lastTerm, newTerm);
-    update();
-  });
-}
-
-function addLastDiscardEvent() {
-  $("#lastDiscardButton").click(function(){
-    popHistory();
-    update();
-  });
-}
-
 function update() {
   checkDictionary();
   showHistory();
   showNumHistory();
-  showLastSearch();
 }
 
 function addEvents() {
@@ -127,8 +93,6 @@ function addEvents() {
   addUpdateEvent();
   addClearEvent();
   addClickLinkEvent();
-  addLastUpdateEvent();
-  addLastDiscardEvent();
 }
 
 $(document).ready(function(){
