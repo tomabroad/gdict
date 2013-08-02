@@ -82,6 +82,15 @@ function addUpdateEvent() {
   });
 }
 
+// http://jsfiddle.net/MHDhT/
+function addHoverEvent(hovId) {
+  $(hovId).hover(function(){
+    $(hovId + ' .hiddenMenu').slideDown();
+  },function(){
+    $(hovId + ' .hiddenMenu').slideUp();
+  });
+}
+
 function update() {
   checkDictionary();
   showHistory();
@@ -93,6 +102,8 @@ function addEvents() {
   addUpdateEvent();
   addClearEvent();
   addClickLinkEvent();
+  addHoverEvent("#aboutHov");
+  addHoverEvent("#dictionaryHov");
 }
 
 $(document).ready(function(){

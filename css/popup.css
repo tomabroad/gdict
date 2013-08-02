@@ -13,3 +13,7 @@ http://www.usabilitypost.com/2012/01/10/pressed-button-state-with-css3/
   background: #4479BA;
   color: #FFF;
 }
+
+.hiddenMenu {
+  display: none;
+}

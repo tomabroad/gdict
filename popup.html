@@ -18,7 +18,7 @@
   <body>
     <div>
       <h4>History<span id="numHistory">&nbsp;(-)</span></h4>
-      <textarea id="historyTextarea" cols="20" rows="10"></textarea>
+      <textarea id="historyTextarea" cols="20" rows="15"></textarea>
       <div>
         <button id="updateButton" type="button">Update</button>
         <button id="clearButton" type="button">Clear</button>
@@ -26,23 +26,24 @@
     </div>
     <hr />
     
-    <div>
-      <h4>Dictionary</h4>
-      <form>
-        <input type="radio" name="dictionary" id="google" />google<br />
-        <input type="radio" name="dictionary" id="eijiro" />eijiro<br />
-        <input type="radio" name="dictionary" id="weblio" />weblio
-      </form>
-    </div>
-    <hr />
-    
-    <div>
+    <div id="aboutHov">
       <h4>About Gdict</h4>
-      <div>
+      <div class="hiddenMenu">
         <div>version 0.9.2</div>
         <button id="gdictLinkButton" class="button-link" type="button">check update</button>
       </div>
     </div>
+    <hr />
+        
+    <div id="dictionaryHov">
+      <h4>Dictionary</h4>
+      <div id="dictionaryMenu" class="hiddenMenu">
+        <input type="radio" name="dictionary" id="google" />google<br />
+        <input type="radio" name="dictionary" id="eijiro" />eijiro<br />
+        <input type="radio" name="dictionary" id="weblio" />weblio
+      </div>
+    </div>
+    
   </body>
   
 </html>
