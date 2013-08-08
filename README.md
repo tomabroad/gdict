@@ -4,7 +4,7 @@ Gdict is a Chrome Extension for helping you to look up terms on the browser. It 
 ![search](/img/search.png)
 
 ## Quick Start
-1. Download the latest version at [https://github.com/tomabroad/gdict/releases](the release page).
+1. Download the latest version at [the release page](https://github.com/tomabroad/gdict/releases).
 2. Unzip the file.
 3. Visit [chrome://extensions](chrome://extensions) in your browser.
 4. Click 'Load unpacked extension' and select the file.
