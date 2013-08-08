@@ -2,6 +2,11 @@ var C_DAYS = 365;
 var C_HIST = "c_hist";
 var C_DICT = "c_dict";
 
+var C_VIEW = "c_view";
+var C_WINDOW = "c_window";
+var C_TAB = "c_tab";
+
+
 // http://www.w3schools.com/js/js_cookies.asp
 function setCookie(c_name, value, exdays) {
   var exdate = new Date();
@@ -82,6 +87,16 @@ function getDictionary() {
   if ( isEmpty(tmp) ) {
     tmp = "google";
   }
+  return tmp;
+}
+
+// result view
+function setView(view) {
+  setCookie(C_VIEW, view, C_DAYS);
+}
+
+function getView() {
+  var tmp = getCookie(C_VIEW);
   return tmp;
 }
 
