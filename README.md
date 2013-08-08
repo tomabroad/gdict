@@ -1,49 +1,27 @@
 # Gdict
-Google Chrome Extension for looking up the selected text on the browser.
+Gdict is a Chrome Extension for helping you to look up terms on the browser. It adds a right-click button for the search and keeps the history that you have searched.
 
-## Feature
-* Right-click to look up the selected text online
-* Browse the search history
+![search](/img/search.png)
 
-## Download
-1. Visit the release page [https://github.com/tomabroad/gdict/releases](https://github.com/tomabroad/gdict/releases)
-2. Download the latest zip file and unzip it
-3. Place the file anywhere on the local drive
+## Quick Start
+1. Download the latest release at [https://github.com/tomabroad/gdict/releases](https://github.com/tomabroad/gdict/releases).
+2. Unzip the file.
+3. Visit [chrome://extensions](chrome://extensions) in your browser.
+4. Click 'Load unpacked extension' and select the file.
 
-![download](/img/download.png)
-
-## Setup
-1. Visit [chrome://extensions](chrome://extensions) in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox and select Extensions under the Tools menu to get to the same place).
-2. Ensure that the Developer mode checkbox in the top right-hand corner is checked.
-3. Click Load unpacked extension… to pop up a file-selection dialog.
-4. Navigate to the directory in which your extension files live, and select it.
+![setup](/img/setup.png)
 
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
 
-![setup](/img/setup.png)
-
 ## Usage
-#### Search terms
+#### Search Terms
 Select the text you want to check, right-click on it, and click on Gdict button. A new window will be open with the search result. To customize the dictionary, click the gdict's icon to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
 
-![search](/img/search.png)
-
-#### Browse history
-Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area. Clear the history by clicking the clear button. (Duplicated terms are not stored)
+#### Browse History
+Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area. To modify the history, directly do it on the text and click update button.
 
 ![popup](/img/popup.png)
 
-## Version
-See [manifest.json](manifest.json)
-
 ## License
 MIT licensed. See [LICENSE](LICENSE) for detail
-
-## Feedback
-Please take two minutes to fill in the survey. I appreciate any comments, suggestions, questions, bug reports, and so on.
-[Send a feedback](https://docs.google.com/forms/d/1JdY4Ok3M_uo9XYC_WCCd8ljzj-Kk8aOtJdUapCwWv2w/viewform)
-
-## Developer's Note
-The released product includes the files listed in RFILES.
-$ zip gdict.zip \`cat RFILES\`
