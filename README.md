@@ -1,5 +1,5 @@
 # Gdict
-Gdict is a Chrome Extension for helping you to look up terms on the browser. It adds a right-click button for the search and keeps the history that you have searched.
+Gdict is a Chrome Extension for looking up words on the browser, adding a right-click search button as well as keeping the history.
 
 ![search](/img/search.png)
 
@@ -14,12 +14,12 @@ Gdict is a Chrome Extension for helping you to look up terms on the browser. It 
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
 
-## Usage
+## How to Use
 #### Search Terms
-Select the text you want to check, right-click on it, and click on Gdict button. A new window will be open with the search result. To customize the dictionary, click the gdict's icon to the right of the Omnibox to show the dialog, and choose the dictionary you want to use.
+Select the text you want to check, right-click on it, and click on Gdict button. A new tab will be open with the search result.
 
 #### Browse History
-Click the gdict's icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area. To modify the history, directly do it on the text and click update button.
+Click the icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area.
 
 ![popup](/img/popup.png)
 
