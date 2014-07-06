@@ -2,7 +2,7 @@
 // The onClicked callback function.
 function onClickHandler(info, tab) {
   var sText = info.selectionText;
-  var encodedQuery = encodeURIComponent(sText + " meaning");
+  var encodedQuery = encodeURIComponent("define " + sText);
   var url = "https://www.google.com/search?q=" + encodedQuery;
   
   addHistory(sText);
