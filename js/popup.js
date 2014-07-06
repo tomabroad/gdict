@@ -7,11 +7,6 @@ function getHistoryTextarea() {
   return $("#historyTextarea").val();
 }
 
-function checkDictionary() {
-  var dict = getDictionary();
-  $("#" + dict).prop("checked", true);
-}
-
 // http://stackoverflow.com/questions/6064956/replace-all-occurrences-in-a-string
 function showHistory() {
   var str = "";
@@ -54,18 +49,6 @@ function addClearEvent() {
   });
 }
 
-function addDictionarySelectEvent() {
-  $("#google").click(function(){
-    setDictionary("google");
-  });
-  $("#eijiro").click(function(){
-    setDictionary("eijiro");
-  });
-  $("#weblio").click(function(){
-    setDictionary("weblio");
-  });
-}
-
 function addClickLinkEvent() {
   $("#gdictLinkButton").click(function(){
     var url = "https://github.com/tomabroad/gdict/releases";
@@ -92,17 +75,14 @@ function addHoverEvent(hovId) {
 }
 
 function update() {
-  checkDictionary();
   showNumHistory();
   showHistory();
 }
 
 function addEvents() {
-  addDictionarySelectEvent();  
   addUpdateEvent();
   addClearEvent();
   addClickLinkEvent();
-  addHoverEvent("#dictionaryHov");
   addHoverEvent("#aboutHov");
 }
 
