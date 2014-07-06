@@ -2,7 +2,8 @@
 // The onClicked callback function.
 function onClickHandler(info, tab) {
   var sText = info.selectionText;
-  var url = createUrl(sText);  
+  var encodedQuery = encodeURIComponent(sText + " meaning");
+  var url = "https://www.google.com/search?q=" + encodedQuery;
   
   addHistory(sText);
   openPage(url);
@@ -21,15 +22,3 @@ chrome.runtime.onInstalled.addListener(function() {
   var id = chrome.contextMenus.create({"title": title, "contexts":[context],
                                          "id": "context" + context});  
 });
-
-// dictionary url
-function createUrl(sText) {
-  var url;
-    url = createGoogleUrl(sText + " meaning"); 
-  return url;
-}
-
-function createGoogleUrl(query) {
-  var url = "https://www.google.com/search?q=" + encodeURIComponent(query);  
-  return url;
-}

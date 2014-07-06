@@ -87,7 +87,6 @@ function addEvents() {
 }
 
 $(document).ready(function(){
-  // console.log("popup: $(document).ready");
   update();  
   addEvents();  
 });
