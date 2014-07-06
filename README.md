@@ -9,8 +9,6 @@ Gdict is a Chrome Extension for looking up words on the browser, adding a right-
 3. Visit [chrome://extensions](chrome://extensions) in your browser.
 4. Click 'Load unpacked extension' and select the file.
 
-![setup](/img/setup.png)
-
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
 
@@ -20,8 +18,6 @@ Select the text you want to check, right-click on it, and click on Gdict button.
 
 #### Browse History
 Click the icon to the right of the Omnibox to show the dialog. The search history will be displayed in the text-area.
-
-![popup](/img/popup.png)
 
 ## License
 MIT licensed. See [LICENSE](LICENSE) for detail
