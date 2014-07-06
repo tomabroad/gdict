@@ -7,17 +7,6 @@ function getHistoryTextarea() {
   return $("#historyTextarea").val();
 }
 
-function checkView() {
-  var view = getView();
-  
-  if (view == C_WINDOW) {
-    viewId = "newWindow";
-  } else {
-    viewId = "newTab";
-  }
-  $("#" + viewId).prop("checked", true);
-}
-
 function checkDictionary() {
   var dict = getDictionary();
   $("#" + dict).prop("checked", true);
@@ -65,15 +54,6 @@ function addClearEvent() {
   });
 }
 
-function addViewSelectEvent() {
-  $("#newTab").click(function(){
-    setView(C_TAB);
-  });
-  $("#newWindow").click(function(){
-    setView(C_WINDOW);
-  });
-}
-
 function addDictionarySelectEvent() {
   $("#google").click(function(){
     setDictionary("google");
@@ -112,19 +92,16 @@ function addHoverEvent(hovId) {
 }
 
 function update() {
-  checkView();
   checkDictionary();
   showNumHistory();
   showHistory();
 }
 
 function addEvents() {
-  addViewSelectEvent();
   addDictionarySelectEvent();  
   addUpdateEvent();
   addClearEvent();
   addClickLinkEvent();
-  addHoverEvent("#viewHov");
   addHoverEvent("#dictionaryHov");
   addHoverEvent("#aboutHov");
 }

@@ -9,23 +9,7 @@ function onClickHandler(info, tab) {
 };
 
 function openPage(url) {
-  var view = getView();
-  
-  if (view == C_WINDOW) {
-    openWindow(url);
-  } else {
-    openTab(url);        
-  }
-}
-
-function openTab(url) {
   window.open(url, '_blank');
-}
-
-// open the new window with the screen size
-// http://www.webdeveloper.com/forum/showthread.php?49916-How-do-I-open-a-browser-window-to-be-maximum-size
-function openWindow(url) {
-  window.open(url, '', 'height=' + screen.height + ',width=' + screen.width);
 }
 
 chrome.contextMenus.onClicked.addListener(onClickHandler);
