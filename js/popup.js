@@ -51,7 +51,7 @@ function addClearEvent() {
 
 function addClickLinkEvent() {
   $("#gdictLinkButton").click(function(){
-    var url = "https://github.com/tomabroad/gdict/releases";
+    var url = "https://github.com/tomabroad/gdict";
     window.open(url, '_blank');
   });
 }
