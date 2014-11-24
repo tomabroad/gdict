@@ -16,10 +16,9 @@ function showNumHistory() {
   $("#numHistory").html(str);
 }
 
-// http://stackoverflow.com/questions/1726747/jquery-how-do-you-loop-through-each-newline-of-text-typed-inside-a-textarea
 function getDisplayedHistory() {
   var str = $("#historyTextarea").val();
-  var jsonObj = jQuery.parseJSON(str);
+  var jsonObj = JSON.parse(str);
   return jsonObj;
 }
 
