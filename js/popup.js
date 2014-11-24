@@ -1,34 +1,26 @@
 
-// http://stackoverflow.com/questions/6064956/replace-all-occurrences-in-a-string
+function update() {
+  showNumHistory();
+  showHistory();
+}
+
 function showHistory() {
-  var str = "";
-  var arr = getHistory();
-  
-  for (var i=arr.length-1; i>=0; i--) {
-    str += arr[i] + "\n";
-  }
+  var jsonObj = getHistory();
+  var str = JSON.stringify(jsonObj, null, 2); 
   $("#historyTextarea").val(str);
 }
 
 function showNumHistory() {
-  var n = getHistory().length;
+  var n = 123;
   var str = "(" + n + ")";
   $("#numHistory").html(str);
 }
 
 // http://stackoverflow.com/questions/1726747/jquery-how-do-you-loop-through-each-newline-of-text-typed-inside-a-textarea
 function getDisplayedHistory() {
-  var lines = $("#historyTextarea").val().split('\n');
-  var arr = [];
-  
-  for (var i = lines.length-1; i >= 0; i--) {
-    var line = lines[i];
-    
-    if ( !isEmpty(line) ) {
-      arr.push(line);
-    }
-  }
-  return arr;
+  var str = $("#historyTextarea").val();
+  var jsonObj = jQuery.parseJSON(str);
+  return jsonObj;
 }
 
 // -- events
@@ -51,15 +43,15 @@ function addClickLinkEvent() {
 // update history
 function addUpdateEvent() {
   $("#updateButton").click(function(){
-    var arr = getDisplayedHistory();
-    setHistory(arr);
-    update();
+    var jsonObj = getDisplayedHistory();
+    
+    if (jsonObj) {
+      setHistory(jsonObj);
+      update();
+    } else {
+      alert("error");
+    }
   });
-}
-
-function update() {
-  showNumHistory();
-  showHistory();
 }
 
 function addEvents() {

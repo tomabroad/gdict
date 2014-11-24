@@ -1,5 +1,5 @@
 var C_DAYS = 365;
-var C_HIST = "c_hist";
+var C_HIST = "tomabroad_gdict12345678";
 
 // http://www.w3schools.com/js/js_cookies.asp
 function setCookie(c_name, value, exdays) {
@@ -33,54 +33,34 @@ function getCookie(c_name) {
 
 // history
 
-function addHistory(term) {
-  var arr = getHistory();
-  if ( contains(term, arr) ) {
-    return;
-  }
-  arr.push(term);
-  setHistory(arr);
-}
-
-function setHistory(arr) {
-  var hs = "";
-  
-  for (var i=0; i<arr.length; i++) {
-    hs += arr[i] + "\t";
-  }
-  hs = hs.substring(0, hs.length-1);
-  setCookie(C_HIST, hs, C_DAYS);
-}
-
 function getHistory() {
-  var hs = getCookie(C_HIST);
-  
-  if ( isEmpty(hs) ) {
-    var arr = [];
-    return arr;
-        
+  var str = getCookie(C_HIST);
+  var jsonObj = null;
+
+  if (str) {
+    jsonObj = JSON.parse(str);
   } else {
-    var arr = hs.split("\t");
-    return arr;    
+    jsonObj = {};
   }
+  return jsonObj;
+}
+
+function addHistory(term) {
+  var hist = getHistory();
+
+  if (hist[term]) {
+    hist[term]++;
+  } else {
+    hist[term] = 1;
+  }
+  setHistory(hist);
+}
+
+function setHistory(jsonObj) {
+  var str = JSON.stringify(jsonObj);
+  setCookie(C_HIST, str, C_DAYS);
 }
 
 function clearHistory() {
-  setCookie(C_HIST, "", C_DAYS);
-}
-
-// utility
-
-function isEmpty(str) {
-  return str == null || str == "";
-}
-
-function contains(target, arr) {
-
-  for (var i=0; i<arr.length; i++) {  
-    if (target == arr[i]) {
-      return true;
-    }
-  }
-  return false;
+  setHistory({});
 }
