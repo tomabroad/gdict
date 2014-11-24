@@ -52,6 +52,7 @@ function countHistory() {
 
 function addHistory(term) {
   var hist = getHistory();
+  term = term.toLowerCase();
 
   if (hist[term]) {
     hist[term]++;

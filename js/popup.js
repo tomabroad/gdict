@@ -5,8 +5,12 @@ function update() {
 }
 
 function showHistory() {
-  var jsonObj = getHistory();
-  var str = JSON.stringify(jsonObj, null, 2); 
+  var str = "";
+
+  if (countHistory() != 0) {
+    var jsonObj = getHistory();
+    str = JSON.stringify(jsonObj, null, 2); 
+  }
   $("#historyTextarea").val(str);
 }
 
