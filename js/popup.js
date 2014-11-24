@@ -11,8 +11,7 @@ function showHistory() {
 }
 
 function showNumHistory() {
-  var n = 123;
-  var str = "(" + n + ")";
+  var str = "(" + countHistory() + ")";
   $("#numHistory").html(str);
 }
 

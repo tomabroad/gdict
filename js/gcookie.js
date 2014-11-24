@@ -45,6 +45,11 @@ function getHistory() {
   return jsonObj;
 }
 
+function countHistory() {
+  var obj = getHistory();
+  return Object.keys(obj).length;
+}
+
 function addHistory(term) {
   var hist = getHistory();
 
