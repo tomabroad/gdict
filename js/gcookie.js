@@ -1,5 +1,5 @@
 var C_DAYS = 365;
-var C_HIST = "tomabroad_gdict12345678";
+var C_HIST = "c_hist";
 
 // http://www.w3schools.com/js/js_cookies.asp
 function setCookie(c_name, value, exdays) {
