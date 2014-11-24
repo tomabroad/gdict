@@ -1,7 +1,7 @@
 {
   "name": "Gdict",
   "description": "Lookup the selected text online",
-  "version": “0.9.6”,
+  "version": "1.0.0",
   "permissions": ["contextMenus"],
   "background": {
     "persistent": false,
