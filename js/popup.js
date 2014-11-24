@@ -53,13 +53,9 @@ function addUpdateEvent() {
   });
 }
 
-function addEvents() {
+$(document).ready(function(){
+  update();  
   addUpdateEvent();
   addClearEvent();
   addClickLinkEvent();
-}
-
-$(document).ready(function(){
-  update();  
-  addEvents();  
 });
