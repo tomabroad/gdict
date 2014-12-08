@@ -42,23 +42,8 @@ function addClickLinkEvent() {
   });
 }
 
-// update history
-function addUpdateEvent() {
-  $("#updateButton").click(function(){
-    var jsonObj = getDisplayedHistory();
-    
-    if (jsonObj) {
-      setHistory(jsonObj);
-      update();
-    } else {
-      alert("error");
-    }
-  });
-}
-
 $(document).ready(function(){
   update();  
-  addUpdateEvent();
   addClearEvent();
   addClickLinkEvent();
 });
