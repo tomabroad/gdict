@@ -4,9 +4,9 @@ Gdict is a Chrome Extension for looking up words on the browser, adding a right-
 ![search](/img/search.png)
 
 ## Quick Start
-1. Download the zip file and unzip it.
+1. git clone https://github.com/tomabroad/gdict
 2. Go to [chrome://extensions](chrome://extensions) on Google Chrome.
-3. Click 'Load unpacked extension' and select the unzipped file.
+3. Click 'Load unpacked extension' and select the cloned directory
 
 > Getting Started: Building a Chrome Extension - Load the extension
 http://developer.chrome.com/extensions/getstarted.html#unpacked
