@@ -5,11 +5,13 @@ function update() {
 }
 
 function showHistory() {
+  var jsonObj = getHistory();
   var str = "";
 
-  if (countHistory() != 0) {
-    var jsonObj = getHistory();
-    str = JSON.stringify(jsonObj, null, 2); 
+  if (jsonObj != null) {
+    for(var key in jsonObj) {
+      str += key + "\n";
+    }
   }
   $("#historyTextarea").val(str);
 }
